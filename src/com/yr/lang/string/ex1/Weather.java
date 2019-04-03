@@ -44,9 +44,5 @@ public class Weather {
 		this.mise = mise;
 	}
 	
-	
-	
-
-	
 
 }

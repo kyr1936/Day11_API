@@ -31,11 +31,19 @@ public class RandomEx1 {
 		int [] lotto = new int[6];
 		for(int i=0; i<lotto.length; i++) {
 			lotto[i]=random.nextInt(45)+1;
+			for(int j=0; j<i; j++) {
+				// 비교 - 중복방지
+				if(lotto[i]==lotto[j]) {
+					i--;
+					break;
+				}
+			}
 		}
+	
 		for(int i=0; i<lotto.length;i++) {
 			System.out.println(lotto[i]);
 		}
-		
+		//출력
 	}
 
 
